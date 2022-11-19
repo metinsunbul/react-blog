@@ -1,0 +1,103 @@
+at first donwload useful
+Simple React Snippets
+Add emmet ->Setting and just type emmet ->Emmet: Include Languages -> Allows us to use emmet inside react compenent when we generating the template in jsx 
+--babel convert this jsx template into html
+
+npx which comes with modern version of node to run the create react app tool
+npx create-react-app  yourprojectname
+code . opens up vs code in the current directory
+
+To Create component type sfc tab  on js file
+
+sfs tab -> to create a stateless functional component
+
+props are a way to pass data from one component a parent component into a child component
+
+note: for dynamic values use curly brackets-> {}
+
+***Nice it explain Event in react**Full React Tutorial #7 - Click Events
+https://www.youtube.com/watch?v=0XSDAup85SA&t=379s&ab_channel=TheNetNinja
+Full React Tutorial #8 - Using State (useState hook)
+https://www.youtube.com/watch?v=4pO-HcG2igk&ab_channel=TheNetNinja
+
+to use hook first of all 
+**import {useState} from 'react';
+const [name, setName] =  handleClick('mario'); //use array to grab the two value handleClick return //it can be anything a string, a number , an array...
+const [age, setage] =  handleClick(39); //use array to grab the two value handleClick return 
+**useEffect Enable the component to render when and every state changes, it re-renders the dom so we can update the state in the browser. This use effect hook is a way to run code on every render
+**import {useState, useEffect} from 'react';
+just above the return statement useEffect() it doesn't return anything. Pass as an argumant a function->this is the function that's going to run every time there is a re-render
+useEffect(() => {
+  console.log('use effect run')
+  console.log(blogs)
+});
+You don't always wan to run a function after every single renders maybe only a certain renders 
+To do that we can use something called a dependency array and this is basically an array that we can pass into this use effect hook as a second argument
+useEffect(() => {
+  console.log('use effect run')
+  console.log(blogs)
+}, []);     
+
+
+to iterate over array
+blogs.mao() //this fires a callback function for each items whereby each time around we want to return a bit of jsx template
+Full React Tutorial #10 - Outputting Lists
+https://www.youtube.com/watch?v=tHjxSVaj_wY&ab_channel=TheNetNinja
+
+Full React Tutorial #11 - Props
+https://www.youtube.com/watch?v=PHaECbrKgs0&ab_channel=TheNetNinja
+
+Note: prop is way to pass data from one component a parent(home) component into a child component(FirmList)
+Prop is used to send data from one component in our case from home to firmList component. 
+After we get data from endpoint in home component we passed that data to FirmList component via prop
+using prop for 2 reasons 
+1-it'll make FirmList component more useable
+2-it still allows us to use data coming from endpoint in home component later on if we needed in the future
+
+Full React Tutorial #13 - Functions as Props
+https://www.youtube.com/watch?v=CWEOYFzgOJs&ab_channel=TheNetNinja
+
+
+use json server as fake api
+use json server package to essentially watch this file and wrap it with some end points
+there is two options here 
+1-either we can install the json server package locally into this project and then use it or
+2-we can just use npx like we did create react app to run the code from the web and it will still watch our file right. Open up a different terminal type 
+npx json-server --watch data/db.json --port 8000
+
+
+To address issues that do not require attention, run:
+  npm audit fix
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+to install node_modules required package
+npm install 
+
+using route
+npm install react-router-dom@5
+
+npm run start
+
+npm install -g serve
+  serve -s build
+
+
+//Before running the do-jo application please run the blow command to start the fake api service to run from background
+
+  Note **** use json server as fake api
+npx json-server --watch data/db.json --port 8000
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+
